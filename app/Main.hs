@@ -1,8 +1,6 @@
 module Main where
 
-import Primes (primeList)
+import Primes (sumPrimeList)
 
 main :: IO ()
-main = do
-    let primeSeed = [2..2000000]
-    print (foldr (+) 0 ([1] ++ (primeList primeSeed)))
+main = print $ sumPrimeList 2000000
